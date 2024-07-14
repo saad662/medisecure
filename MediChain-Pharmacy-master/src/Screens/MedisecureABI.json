@@ -1,0 +1,915 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "medicine_id",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "description",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "manufacturer",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "category",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "formula",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "chemicals",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "medicine_type",
+        "type": "string"
+      }
+    ],
+    "name": "add_medicine",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "order_id",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "medicine_id",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "quantity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "distributor",
+        "type": "string"
+      }
+    ],
+    "name": "add_order",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "stock_id",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "medicine_id",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "quantity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "manufacture_date",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "expiry_date",
+        "type": "uint256"
+      }
+    ],
+    "name": "add_stock",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "deployContract",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "manufacturer",
+        "type": "string"
+      }
+    ],
+    "name": "getRemainingStocks",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "manufacturer",
+        "type": "string"
+      }
+    ],
+    "name": "getTotalNumberOfOrdersCreated",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "manufacturer",
+        "type": "string"
+      }
+    ],
+    "name": "getTotalNumberOfSoldStocks",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "manufacturer",
+        "type": "string"
+      }
+    ],
+    "name": "getTotalNumberOfStocks",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isActive",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "order_id",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "status",
+        "type": "string"
+      }
+    ],
+    "name": "update_order_status",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "view_all_medicines",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "medicine_id",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "manufacturer",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "category",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "formula",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "chemicals",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "medicine_type",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct IMedisecure.Medicine[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "view_all_orders",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "order_id",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "medicine_id",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "total_price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "distributor",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "buyer",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "transaction_hash",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct IMedisecure.Order[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "view_all_stocks",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "stock_id",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "medicine_id",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "manufacture_date",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry_date",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IMedisecure.Stock[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "medicine_id",
+        "type": "string"
+      }
+    ],
+    "name": "view_medicine_by_id",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "medicine_id",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "manufacturer",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "category",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "formula",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "chemicals",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "medicine_type",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct IMedisecure.Medicine",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "manufacturer",
+        "type": "string"
+      }
+    ],
+    "name": "view_medicine_by_manufacturer",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "medicine_id",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "manufacturer",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "category",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "formula",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "chemicals",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "medicine_type",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct IMedisecure.Medicine[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "order_id",
+        "type": "string"
+      }
+    ],
+    "name": "view_order_by_id",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "order_id",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "medicine_id",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "total_price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "distributor",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "buyer",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "transaction_hash",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct IMedisecure.Order",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "distributor",
+        "type": "string"
+      }
+    ],
+    "name": "view_orders_by_distributor",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "order_id",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "medicine_id",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "total_price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "distributor",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "buyer",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "transaction_hash",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct IMedisecure.Order[]",
+        "name": "",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "string[]",
+        "name": "",
+        "type": "string[]"
+      },
+      {
+        "internalType": "bytes32[]",
+        "name": "",
+        "type": "bytes32[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "manufacturer",
+        "type": "string"
+      }
+    ],
+    "name": "view_orders_by_manufacturer",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "order_id",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "medicine_id",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "total_price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "distributor",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "buyer",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "transaction_hash",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct IMedisecure.Order[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "stock_id",
+        "type": "string"
+      }
+    ],
+    "name": "view_stock_by_id",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "stock_id",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "medicine_id",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "manufacture_date",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry_date",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IMedisecure.Stock",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "manufacturer",
+        "type": "string"
+      }
+    ],
+    "name": "view_stocks_by_manufacturer",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "stock_id",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "medicine_id",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "manufacture_date",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry_date",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IMedisecure.Stock[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "medicine_id",
+        "type": "string"
+      }
+    ],
+    "name": "view_stocks_by_medicine_id",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "stock_id",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "medicine_id",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "manufacture_date",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry_date",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IMedisecure.Stock[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

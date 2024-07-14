@@ -1,0 +1,148 @@
+.MedForm-contact-sec3 {
+  background: linear-gradient(135deg, #a2e7db, #aeb7dd, rgb(230, 182, 202));
+  background-size: 101% 101%;
+  animation: gradientAnimation 10s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+.MedForm-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.MedForm-formin::placeholder {
+  color: rgb(180, 180, 180);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.MedForm-formin {
+  min-width: 380px;
+  padding: 15px;
+  margin-bottom: 15px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.MedForm-formin::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.MedForm-formin:focus {
+  border-color: #000000;
+}
+
+.MedForm-formin-dropdown {
+  margin: 0 auto;
+  min-width: 50%;
+  margin-bottom: 40px;
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+}
+
+.MedForm-dropdown {
+  min-width: 50%;
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  background: linear-gradient(0deg, #5cc9b5, #8795d6);
+  background-size: 400% 400%;
+  animation: gradientAnimation 9s infinite;
+  font-size: 20px;
+}
+
+.MedForm-placeholder::placeholder {
+  color: #e1e1e1;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.MedForm-formin-btn {
+  padding: 15px 30px;
+  margin-top: 10px;
+  background: linear-gradient(0deg, #5cc9b5, #8795d6);
+  background-size: 400% 400%;
+  animation: gradientAnimation 9s infinite;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 1s;
+}
+
+.MedForm-formin-btn:hover {
+  background: black;
+}
+
+.MedForm-formin-btn > span {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.MedForm-input-text1 {
+  font-size: 35px;
+  font-weight: 400;
+  color: #272727;
+  margin: 50px 0;
+  margin-top: 50px;
+}
+
+.MedForm-input-text2 {
+  font-size: 18px;
+  font-weight: 450;
+  color: #e5e5e5;
+  margin: 40px 0;
+  font-style: italic;
+}
+
+.MedForm-inputs > img {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 750px) {
+  .MedForm-image2 {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .MedForm-formin-btn {
+    width: 28%;
+    height: 40px;
+  }
+
+  .MedForm-input-text1 {
+    font-size: 18px;
+  }
+
+  .MedForm-inputs > img {
+    width: 150px;
+  }
+}

@@ -1,0 +1,110 @@
+/*!
+ =========================================================
+ * ArchitectUI ReactJS Dashboard Theme - v1.0.0
+ =========================================================
+ * Product Page: https://dashboardpack.com
+ * Copyright 2019 DashboardPack (https://dashboardpack.com)
+ * Licensed under MIT (https://github.com/DashboardPack/architectui-react-theme-free/blob/master/LICENSE)
+ =========================================================
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ */
+
+// BOOTSTRAP 4 VARIABLES
+
+@import "components/bootstrap4/functions";
+@import "components/bootstrap4/variables";
+@import "components/bootstrap4/mixins";
+
+// ArchitectUI Themes Variables
+
+@import "themes/layout-variables";
+
+// BOOTSTRAP 4 IMPORTS
+
+@import "components/bootstrap4/root";
+@import "components/bootstrap4/reboot";
+@import "components/bootstrap4/type";
+@import "components/bootstrap4/images";
+@import "components/bootstrap4/code";
+@import "components/bootstrap4/grid";
+@import "components/bootstrap4/tables";
+@import "components/bootstrap4/forms";
+@import "components/bootstrap4/buttons";
+@import "components/bootstrap4/transitions";
+@import "components/bootstrap4/dropdown";
+@import "components/bootstrap4/button-group";
+@import "components/bootstrap4/input-group";
+@import "components/bootstrap4/custom-forms";
+@import "components/bootstrap4/nav";
+@import "components/bootstrap4/navbar";
+@import "components/bootstrap4/card";
+@import "components/bootstrap4/breadcrumb";
+@import "components/bootstrap4/pagination";
+@import "components/bootstrap4/badge";
+@import "components/bootstrap4/jumbotron";
+@import "components/bootstrap4/alert";
+@import "components/bootstrap4/progress";
+@import "components/bootstrap4/media";
+@import "components/bootstrap4/list-group";
+@import "components/bootstrap4/close";
+@import "components/bootstrap4/toasts";
+@import "components/bootstrap4/modal";
+@import "components/bootstrap4/tooltip";
+@import "components/bootstrap4/popover";
+@import "components/bootstrap4/carousel";
+@import "components/bootstrap4/spinners";
+@import "components/bootstrap4/utilities";
+@import "components/bootstrap4/print";
+// LAYOUT
+
+@import "layout/layout";
+
+// UTILS
+
+@import "utils/helpers";
+@import "utils/backgrounds";
+@import "utils/animate";
+@import "utils/comps-animations";
+
+// ELEMENTS
+
+@import "elements/buttons";
+@import "elements/navs";
+@import "elements/badges";
+@import "elements/cards";
+@import "elements/tabs";
+@import "elements/progressbar";
+
+// DASHBOARD BOXES
+
+@import "widgets/chart-boxes/chart-boxes";
+
+// COMPONENTS
+
+// Perfect Scrollbar
+@import "components/perfect-scrollbar/perfect-scrollbar";
+
+// Hamburger Button
+@import "components/hamburgers/hamburgers";
+
+
+// Notifications
+@import "components/notifications/toastify";
+
+// Popovers & Tooltips
+@import "components/popovers-tooltips/popovers-tooltips";
+
+// Icons
+@import "components/icons/p7icons";
+@import "components/icons/linearicons";
+
+// FORMS
+
+
+// DEMO
+
+@import "demo-ui/demo";
+
+// Responsive
+
+@import "layout/responsive/responsive-base";

@@ -1,0 +1,47 @@
+.nnnx {
+  background-color: #202a3b !important;
+  color: black;
+  margin: 0;
+  box-shadow: 0px 0px 1px 0px;
+  height: 50px; /* Set height to 50px */
+  font-size: 20px;
+}
+
+.middle {
+  margin: 0 auto;
+}
+
+.items-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.list-item {
+  margin-right: 60px;
+  color: black;
+  border-radius: 10px;
+}
+
+/* Add this CSS to adjust the navbar height */
+@media screen and (max-width: 768px) {
+  .nnnx {
+    height: 50px;
+  }
+
+  .list-item {
+    margin-right: 20px;
+  }
+}
+
+/* Add this CSS to adjust the navbar height */
+@media screen and (max-width: 480px) {
+  .nnnx {
+    height: 50px;
+  }
+
+  .list-item {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.navbar__title {
+    font-size: 24px;
+}
+
+.logout__button {
+    min-width: 100px;
+    padding: 12px 18px;
+    margin-bottom: 5px;
+    background: black;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}

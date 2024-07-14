@@ -1,0 +1,106 @@
+// Tooltips & Popovers
+
+.popover,
+.tooltip {
+  opacity: 0;
+  transition: opacity .2s ease;
+
+  &.show {
+    opacity: 1;
+  }
+}
+
+// Popover
+
+.popover {
+  box-shadow: $box-shadow-default;
+
+  &.rm-max-width {
+    max-width: initial;
+  }
+
+  &.rm-pointers {
+    .arrow {
+      display: none !important;
+    }
+  }
+}
+
+@mixin bg-popover($parent, $color) {
+  #{$parent} {
+    background-color: $color !important;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  @include bg-popover(".popover-#{$color}", $value);
+}
+
+.popover-custom {
+  .popover-body {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &.popover-custom-lg {
+    min-width: 22rem;
+  }
+
+  &.popover-custom-xl {
+    min-width: 25rem;
+  }
+
+  &.popover-custom-sm {
+    min-width: 15rem;
+  }
+}
+
+.popover-bg {
+  border: 0;
+
+  .arrow {
+    display: none;
+  }
+
+  .popover-header {
+    background: rgba(255, 255, 255, .1);
+    border-bottom: 0;
+    color: rgba(255, 255, 255, 1);
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .popover-body {
+    color: rgba(255, 255, 255, .7);
+  }
+
+  &.text-dark {
+    .popover-header {
+      color: rgba(0, 0, 0, .8);
+    }
+
+    .popover-body {
+      color: rgba(0, 0, 0, .7);
+    }
+  }
+}
+
+// Tooltip
+
+.tooltip {
+  &.tooltip-light {
+    .tooltip-inner {
+      background: $white;
+      color: $gray-800;
+      box-shadow: $box-shadow-default;
+      border: $popover-border-color solid 1px;
+    }
+
+    .arrow {
+      display: none;
+    }
+  }
+}

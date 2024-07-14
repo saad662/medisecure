@@ -1,0 +1,116 @@
+// Badges
+
+@each $color, $value in $theme-colors {
+  .badge-#{$color} {
+    @include badge-variant($value);
+  }
+}
+
+.badge {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  min-width: 19px;
+}
+
+.badge-light {
+  background: $white;
+}
+
+.badge-dot {
+  text-indent: -999em;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  border: transparent solid 1px;
+  @include border-radius(30px);
+  min-width: 2px;
+}
+
+.badge-dot-lg {
+  width: 10px;
+  height: 10px;
+}
+
+.badge-dot-xl {
+  width: 18px;
+  height: 18px;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    @include border-radius($border-radius);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -5px 0 0 -5px;
+    background: $white;
+  }
+}
+
+.badge-dot-sm {
+  width: 6px;
+  height: 6px;
+}
+
+.btn {
+  .badge {
+    margin-left: 8px;
+  }
+
+  .badge-dot {
+    position: absolute;
+    border: $white solid 2px;
+    top: -5px;
+    right: -5px;
+    width: 11px;
+    height: 11px;
+
+    &.badge-dot-lg {
+      width: 14px;
+      height: 14px;
+    }
+
+    &.badge-dot-sm {
+      width: 8px;
+      height: 8px;
+      border-width: 1px;
+    }
+  }
+
+  .badge-dot-inside {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.btn-sm {
+  .badge-dot-sm {
+    top: 1px;
+    right: 4px;
+  }
+
+  .badge-dot {
+    top: 0px;
+    right: 2px;
+  }
+
+  .badge-dot-lg {
+    top: -3px;
+    right: -2px;
+  }
+
+  .badge-pill {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+  }
+}
+
+.badge-abs {
+  position: absolute;
+  right: -3px;
+  top: -3px;
+}

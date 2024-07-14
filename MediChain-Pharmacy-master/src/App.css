@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #a2e7db, #aeb7dd, rgb(230, 182, 202));
+  background-size: 101% 101%;
+  animation: gradientAnimation 10s infinite;
+  background-size: contain;
+}
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 100%;
+  }
+  50% {
+      background-position: 100% 0%;
+  }
+  100% {
+      background-position: 0% 100%;
+  }
+}
+.App {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}

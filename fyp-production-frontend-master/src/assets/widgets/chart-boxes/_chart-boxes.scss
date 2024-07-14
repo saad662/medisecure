@@ -1,0 +1,172 @@
+// Chart boxes
+
+// Variables
+
+$widget-spacer: $spacer;
+
+%center-elem {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.widget-chart {
+  text-align: center;
+  padding: $widget-spacer;
+  position: relative;
+
+  .widget-chart-content {
+    position: relative;
+    z-index: 5;
+  }
+
+  .widget-chart-content-lg {
+    padding: ($widget-spacer * 2) 0 $widget-spacer  ($widget-spacer * 2);
+
+    .widget-numbers {
+      margin-bottom: 0;
+    }
+  }
+
+  .widget-chart-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: .25;
+    z-index: 6;
+    @include border-bottom-radius($card-border-radius);
+    overflow: hidden;
+  }
+
+  .widget-numbers {
+    font-weight: bold;
+    font-size: 2.5rem;
+    display: block;
+    line-height: 1;
+    margin: $widget-spacer auto;
+
+    & + .widget-description,
+    & + .widget-subheading {
+      margin-top: -($widget-spacer / 2);
+    }
+  }
+
+  .widget-subheading {
+    margin: -0.5rem 0 0;
+    display: block;
+    opacity: .6;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    & + .widget-numbers {
+      margin-top: ($widget-spacer / 2);
+    }
+  }
+
+  .widget-description {
+    margin: $widget-spacer 0 0;
+  }
+
+  .widget-chart-actions {
+    position: absolute;
+    right: $widget-spacer / 2;
+    top: $widget-spacer / 2;
+    z-index: 12;
+
+    .btn-link {
+      font-size: 1.1rem;
+      padding-top: 0;
+      padding-bottom: 0;
+      opacity: .6;
+    }
+  }
+
+  .chart-wrapper-relative {
+    position: relative;
+    opacity: 1;
+    margin-top: ($widget-spacer);
+  }
+}
+
+.widget-chart-actions {
+  position: absolute;
+  right: $widget-spacer;
+  top: $widget-spacer;
+  z-index: 12;
+
+  .btn-link {
+    font-size: 1.1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: .6;
+  }
+}
+
+.widget-chart,
+.widget-content {
+  &:hover {
+    .widget-chart-actions {
+      .btn-link {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.widget-content .widget-content-wrapper {
+  display: flex;
+  flex: 1;
+  position: relative;
+  align-items: center;
+}
+
+.icon-wrapper {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto;
+  @extend %center-elem;
+  position: relative;
+  overflow: hidden;
+
+  &[class*="border-"] {
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  .icon-wrapper-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    opacity: .2;
+
+    &.bg-light {
+      opacity: .08;
+    }
+
+  }
+
+  i {
+    margin: 0 auto;
+    font-size: 1.7rem;
+    position: relative;
+    z-index: 5;
+
+    &:before {
+      margin-top: -3px;
+    }
+  }
+}
+
+// Widgets with bottom border
+
+.card-btm-border {
+  border-bottom: transparent solid 4px;
+}
+
+.widget-numbers-sm {
+  font-size: 1.5rem;
+}

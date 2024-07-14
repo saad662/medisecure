@@ -1,0 +1,15 @@
+
+// Header Buttons
+
+.header-btn-lg {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    background: $gray-600;
+  }
+
+}

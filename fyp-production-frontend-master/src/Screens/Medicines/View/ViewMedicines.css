@@ -1,0 +1,14 @@
+.medicines-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.medicine-card-wrapper {
+    flex: 1 0 300px;
+    max-width: 300px;
+    min-width: 250px;
+    margin: 16px;
+}

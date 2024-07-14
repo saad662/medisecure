@@ -1,0 +1,67 @@
+.medicine-card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    background-color: #fff;
+    margin-bottom: 16px;
+}
+
+.medicine-image {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    max-height: 75px;
+    margin-bottom: 15px;
+}
+
+.medicine-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.medicine-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.medicine-subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.medicine-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.toggle-description {
+    color: #007bff;
+    cursor: pointer;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.add-stocks-button {
+    align-self: flex-end;
+    margin-top: auto;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
