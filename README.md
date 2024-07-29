@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            margin: 0 0 1em;
+        }
+        ul {
+            margin: 0 0 1em;
+            padding: 0 0 0 20px;
+        }
+        code {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+            overflow: auto;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
 <body>
 
 <h1>MediSecure</h1>
 <p><strong>Version:</strong> 1.0</p>
-<p><strong>Date:</strong> 13/11/2023</p>
+<p><strong>Date:</strong>8/07/2024</p>
 
 <h2>Abstract</h2>
 <p>MediSecure is a solution addressing the surge in black market medicine trade and stoppage of fake medicine production, exemplified during the COVID-19 crisis and with companies like GSK. This illicit activity poses a serious threat, with essential items sold at inflated prices. MediSecure automates and secures transactions through blockchain, ensuring trust and traceability. The platform includes a user-friendly web application and app interface for seamless communication among pharmaceutical stakeholders, focusing on transparency and security in the medicine supply chain.</p>
