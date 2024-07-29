@@ -1,43 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        p {
-            margin: 0 0 1em;
-        }
-        ul {
-            margin: 0 0 1em;
-            padding: 0 0 0 20px;
-        }
-        code {
-            background-color: #f4f4f4;
-            border: 1px solid #ddd;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-        pre {
-            background-color: #f4f4f4;
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 4px;
-            overflow: auto;
-        }
-        a {
-            color: #0366d6;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
 <body>
 
 <h1>MediSecure</h1>
