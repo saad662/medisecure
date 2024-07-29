@@ -5,6 +5,7 @@
 <h1>MediSecure</h1>
 <p><strong>Version:</strong> 1.0</p>
 <p><strong>Date:</strong> 8/07/2024</p>
+<p><strong>Group Members:</strong>M.Saad Amin, M.Shaheryar Nasir, M.Hamza Siddiqui, M. Ahmed</p>
 
 <h2>Abstract</h2>
 <p>MediSecure is a solution addressing the surge in black market medicine trade and stoppage of fake medicine production, exemplified during the COVID-19 crisis and with companies like GSK. This illicit activity poses a serious threat, with essential items sold at inflated prices. MediSecure automates and secures transactions through blockchain, ensuring trust and traceability. The platform includes a user-friendly web application and app interface for seamless communication among pharmaceutical stakeholders, focusing on transparency and security in the medicine supply chain.</p>
